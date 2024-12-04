@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Hình ảnh banner hoặc icon cho Home -->
+
+    <!-- Hiển thị tổng chi tiêu -->
+
+    <ImageView
+        android:id="@+id/homeImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Image representing the home screen"
+        android:src="@drawable/ic_home_image" />
+
+    <TextView
+        android:id="@+id/total_expense_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Expense: 0.0"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:textColor="#FF4081"/>
+
+
+    <!-- Nút reset tổng chi tiêu -->
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Total Expense"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:backgroundTint="#FF4081"
+    android:textColor="@android:color/white"/>
+</LinearLayout>
